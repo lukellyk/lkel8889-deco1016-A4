@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'ING Me';
+  src: url('../font/INGMe.woff2') format('woff2'),
+      url('../font/INGMe.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ING Me';
+  src: url('../font/INGMe-Bold.woff2') format('woff2'),
+      url('../font/INGMe-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "ING Me", Times, serif;
+}
+
+#ing-logo {
+  width: auto;
+  height: 2em;
+  float: left;
+  padding-top: 5px;
+  padding-left: 5%;
+}
+
+#ing-card{
+  width: auto;
+  height: 25vmin;
+  transform: rotate(50deg);
+}
+
+.image-container{
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.text-container{
+  width:60%;
+  height:100vh;
+  padding-left: 40px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header{
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 5%;
+  overflow: hidden;
+  position: -webkit-sticky; /* safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #25285e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+hero{
+  color: #25285e;
+  font-weight: bold;
+  font-size: 5vmin;
+}
+
+.body {
+  color: #25285e;
+  font-size: 2.1vmin;
+}
+
+#l1{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#l2{
+  flex: 1;
+  /* background-color: blue; */
+}
+
+#l3{
+  flex: 1;
+  /* background-color: red; */
+}
+
+#l4{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#l5{
+  flex: 1;
+  background-color: purple;
+}
+
+#l6{
+  flex: 1;
+  background-color: yellow;
+}

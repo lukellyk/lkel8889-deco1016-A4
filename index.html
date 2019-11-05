@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="css/hover.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+  <script type="text/javascript" src="js/fullpage.js"></script>
+  <script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
+  <!-- <script src="script.js"></script> -->
+
+
+
+</head>
+
+
+<body>
+
+  <header>
+    <ul>
+      <div>
+          <a href="#slide1">
+          <img src="img/ing-logo.png" alt="ING Logo" id="ing-logo">
+          </a>
+      </div>
+      <li><a class="hvr-bounce-to-top" href="index.html">Help</a></li>
+      <li><a class="hvr-bounce-to-top" href="news.asp">Contact</a></li>
+      <li><a class="hvr-bounce-to-top" href="contact.asp">Security</a></li>
+      <li><a class="hvr-bounce-to-top" href="about.asp">About</a></li>
+    </ul>
+  </header>
+
+<div id="fullpage">
+  <div class="section">
+      <div class='slide' data-anchor="slide1">
+        <div id='l1'>
+          <div id='l2'>
+            <div class='image-container'>
+                <img src="img/ing-card.png" alt="ING Card" id='ing-card'>
+            </div>
+          </div>
+          <div id='l3'>
+            <div class='text-container'>
+                <hero>Maximise your savings now.</hero><br>
+                <div class="body">Enter your details and open an account in minutes.</div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="section">
+      <div class='slide' data-anchor="slide2">
+        <div id='l4'>
+          <div id='l5'></div>
+          <div id='l6'></div>
+        </div>
+      </div>
+  </div>
+</div>
+
+</body>
+
+<script type="text/javascript">
+  
+  new fullpage('#fullpage', {
+  //options here
+  autoScrolling:true,
+  scrollHorizontally: true,
+  anchors:['slide1', 'slide2'],
+  css3:true,
+  licenseKey: 'E5E49030-536045A5-B7FB35A2-EE9BBB0E'
+  });
+  
+</script>
+
+</html>

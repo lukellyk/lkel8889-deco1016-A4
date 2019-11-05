@@ -1,0 +1,22 @@
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 5%;
+  overflow: hidden;
+  position: -webkit-sticky; /* safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #25285e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}

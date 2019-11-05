@@ -32,7 +32,7 @@
 #ing-card{
   width: auto;
   height: 25vmin;
-  transform: rotate(50deg);
+  transform: translateX(-100px) rotate(50deg);
 }
 
 .image-container{

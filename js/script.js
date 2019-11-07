@@ -71,9 +71,11 @@
   form.addEventListener("submit", function(ev) {
     ev.preventDefault();
     handleFormSubmit(form);
+    var usersName = inputs.item(0).value;
+    console.log(usersName);
+    document.getElementById('gday-text').innerHTML = "G'day, "+ usersName+ "!"
   });
 
-  //re-enable when doing second form
 
   // var form2 = document.querySelector("#form2");
   // form2.addEventListener("submit", function(ev) {

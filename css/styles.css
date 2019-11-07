@@ -35,6 +35,11 @@
   transform: translateX(-5vh) rotate(50deg);
 }
 
+#avatar{
+  width: auto;
+  height: 40vmin;
+}
+
 .image-container{
   height: 100vh;
   display: flex;
@@ -91,13 +96,13 @@ hero{
   font-size: 2.1vmin;
 }
 
-#l1{
+.main-div{
   display: flex;
   height: 100%;
   width: 100%;
 }
 
-#l2{
+.half-div{
   flex: 1;
   /* background-color: blue; */
 }
@@ -115,20 +120,25 @@ hero{
 
 #l5{
   flex: 1;
-  background-color: purple;
+  /* background-color: purple; */
 }
 
 #l6{
   flex: 1;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
-#form-name{
+.text-input{
   border-style: solid;
+  font-size: 100%;
   width: 80%;
   border-width: 1px;
   border-radius: 5px;
   height: 30px;
   border-color: #25285e;
   /* background: black; */
+}
+
+label{
+  color: #25285e;
 }

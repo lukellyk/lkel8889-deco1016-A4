@@ -32,7 +32,7 @@
 #ing-card{
   width: auto;
   height: 25vmin;
-  transform: translateX(-100px) rotate(50deg);
+  transform: translateX(-5vh) rotate(50deg);
 }
 
 .image-container{
@@ -121,4 +121,14 @@ hero{
 #l6{
   flex: 1;
   background-color: yellow;
+}
+
+#form-name{
+  border-style: solid;
+  width: 80%;
+  border-width: 1px;
+  border-radius: 5px;
+  height: 30px;
+  border-color: #25285e;
+  /* background: black; */
 }

@@ -32,6 +32,9 @@
     </header>
 
     <div id='fullpage'>
+
+<!-- ADDRESS ENTRY -->
+
         <div class="section">
             <div class='slide' data-anchor="slide1">
               <div class='main-div'>
@@ -62,6 +65,42 @@
               </div>
           </div>
         </div>
+
+<!-- ID VERIFICATION -->
+
+<div class="section">
+        <div class='slide' data-anchor="slide2">
+          <div class='main-div'>
+            <div class = 'half-div'>
+              <div class='image-container'>
+                  <img src="img/id-card.png" alt="ID" id='id-card'>
+              </div>
+            </div>
+            <div class = 'half-div'>
+              <div class='text-container'>
+                  <hero>We need to check it's you.</hero><br>
+                  <div class="body">We'll need a picture of your ID</div><br>
+                  
+                  <!-- Stream video via webcam -->
+                    <div class="video-wrap">
+                        <video id="video" playsinline autoplay></video>
+                    </div>
+    
+                 <!-- Trigger canvas web API -->
+                    <div class="controller">
+                        <button id="snap">Capture</button>
+                    </div>
+    
+                <!-- Webcam video snapshot -->
+                    <canvas id="canvas" width="640" height="480"></canvas>  
+
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
     </div>
 
     <script type="text/javascript" src="js/validate.min.js"></script>

@@ -16,6 +16,15 @@
         message: "can only contain letters"
       }
     },
+
+    mobileNumber: {
+      presence: true,
+      format:{
+        pattern: "^(?:\+?(61))? ?(?:\((?=.*\)))?(0?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[- ]?\d{3})$",
+      }
+      },
+          
+    // }
     // email: {
     //   // Email is required
     //   presence: true,
@@ -73,15 +82,21 @@
     handleFormSubmit(form);
     var usersName = inputs.item(0).value;
     console.log(usersName);
-    document.getElementById('gday-text').innerHTML = "G'day, "+ usersName+ "!"
+    document.getElementById('gday-text').innerHTML = "G'day, "+ usersName + "!"
   });
 
 
-  // var form2 = document.querySelector("#form2");
-  // form2.addEventListener("submit", function(ev) {
-  //   ev.preventDefault();
-  //   handleFormSubmit(form2);
-  // });
+  var form2 = document.querySelector("#form2");
+  form2.addEventListener("submit", function(ev) {
+    ev.preventDefault();
+    handleFormSubmit(form2);
+  });
+
+  var form3 = document.querySelector("#form3");
+  form3.addEventListener("submit", function(ev) {
+    ev.preventDefault();
+    handleFormSubmit(form3);
+  });
 
 
 
@@ -92,8 +107,8 @@
     // then we update the form to reflect the results
     showErrors(form, errors || {});
     if (!errors) {
-      showSuccess();
-      window.location = "#slide2";
+      // showSuccess();
+      fullpage_api.moveSectionDown();
     }
   }
 

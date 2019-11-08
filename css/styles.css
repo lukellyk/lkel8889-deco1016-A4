@@ -40,6 +40,12 @@
   height: 40vmin;
 }
 
+#phone{
+  width: auto;
+  height: 35vmin;
+  transform: scaleX(-1);
+}
+
 .image-container{
   height: 100vh;
   display: flex;
@@ -129,6 +135,7 @@ hero{
 }
 
 .text-input{
+  text-transform: capitalize;
   border-style: solid;
   font-size: 100%;
   width: 80%;
@@ -141,4 +148,13 @@ hero{
 
 label{
   color: #25285e;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+
+input[type=number] {
+    -moz-appearance:textfield;
 }

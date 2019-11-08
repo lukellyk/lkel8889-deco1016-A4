@@ -1,9 +1,9 @@
 
   // These are the constraints used to validate the form
-  var constraints = {
+  var form1and2Constraints = {
     name: {
       // You need to pick a username too
-      presence: true,
+      presence: false,
       // And it must be between 3 and 20 characters long
       length: {
         minimum: 3,
@@ -16,21 +16,25 @@
         message: "can only contain letters"
       }
     },
+  };
 
-    // mobileNumber: {
-    //   presence: true,
-    //   format:{
-    //     pattern: "(0?[4])[0-9]{8}",
-    //   }
-    //   },
-          
-    // }
-    // email: {
-    //   // Email is required
-    //   presence: true,
-    //   // and must be an email (duh)
-    //   email: true
-    // },
+var form3Constraints = {
+    mobileNumber: {
+      presence: false,
+      format:{
+        pattern: "99",
+        flags: "i"
+      }
+      },    
+    email: {
+      // Email is required
+      presence: false,
+      // and must be an email (duh)
+      email: true
+    },  
+}
+
+
     // username: {
     //   // You need to pick a username too
     //   presence: true,
@@ -71,15 +75,16 @@
     //     pattern: "\\d{4}",
     //     message: "Postcode must be 4 digits"
     //   },
+    // }
 
     // }
-  };
+  // };
 
   // Hook up the form so we can prevent it from being posted
   var form = document.querySelector("#form1");
   form.addEventListener("submit", function(ev) {
     ev.preventDefault();
-    handleFormSubmit(form);
+    handleFormSubmit(form, undefined, form1and2Constraints);
     var usersName = inputs.item(0).value;
     console.log(usersName);
     document.getElementById('gday-text').innerHTML = "G'day, "+ usersName + "!"
@@ -89,19 +94,19 @@
   var form2 = document.querySelector("#form2");
   form2.addEventListener("submit", function(ev) {
     ev.preventDefault();
-    handleFormSubmit(form2);
+    handleFormSubmit(form2, undefined, form1and2Constraints);
   });
 
   var form3 = document.querySelector("#form3");
   form3.addEventListener("submit", function(ev) {
     ev.preventDefault();
-    handleFormSubmit(form3);
+    handleFormSubmit(form3, undefined, form3Constraints);
   });
 
 
 
 
-  function handleFormSubmit(form, input) {
+  function handleFormSubmit(form, input, constraints) {
     // validate the form against the constraints
     var errors = validate(form, constraints);
     // then we update the form to reflect the results
@@ -128,7 +133,7 @@
   for (var i = 0; i < inputs.length; ++i) {
     inputs.item(i).addEventListener("change", function(ev) {
 
-      var errors = validate(form, constraints) || {};
+      var errors = validate(form, {...form1and2Constraints, ...form3Constraints}) || {};
       showErrorsForInput(this, errors[this.name])
     });
   }

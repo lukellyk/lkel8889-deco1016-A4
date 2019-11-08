@@ -3,7 +3,7 @@
   var form1and2Constraints = {
     name: {
       // You need to pick a username too
-      presence: false,
+      presence: true,
       // And it must be between 3 and 20 characters long
       length: {
         minimum: 3,
@@ -18,22 +18,20 @@
     },
   };
 
-var form3Constraints = {
-    mobileNumber: {
-      presence: false,
-      format:{
-        pattern: "99",
-        flags: "i"
-      }
-      },    
+var form3Constraints = { 
     email: {
       // Email is required
-      presence: false,
+      presence: true,
       // and must be an email (duh)
       email: true
     },  
 }
 
+var form4Constraints = { 
+}
+
+var form5Constraints = { 
+}
 
     // username: {
     //   // You need to pick a username too
@@ -103,6 +101,17 @@ var form3Constraints = {
     handleFormSubmit(form3, undefined, form3Constraints);
   });
 
+  var form4 = document.querySelector("#form4");
+  form4.addEventListener("submit", function(ev) {
+    ev.preventDefault();
+    handleFormSubmit(form4, undefined, form4Constraints);
+  });
+
+  var form5 = document.querySelector("#form5");
+  form5.addEventListener("submit", function(ev) {
+    ev.preventDefault();
+    handleFormSubmit(form5, undefined, form5Constraints);
+  });
 
 
 

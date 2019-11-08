@@ -54,7 +54,7 @@
                 <form id="form1">
                   <div class='form-group'>
                     <label for='form-first-name'>First Name:</label><br>
-                    <input type='text' id='form-first-name' name='name' class='text-input'>
+                    <input type='text' id='form-first-name' name='name' class='text-input' pattern="/^[a-z ,.'-]+$/i'-]+$/u" required>
                     <input class = "submit-button" type="submit" value="Submit"/>
                     <div class='messages'></div>
                   </div>
@@ -62,7 +62,7 @@
             </div>
           </div>
         </div>
-    </div>
+    </div> 
   </div>
 
 <!-- LAST NAME -->
@@ -82,7 +82,7 @@
               <form id="form2">
                 <div class='form-group'>
                   <label for='form-last-name'>Last Name:</label><br>
-                  <input type='text' id='form-last-name' name='name' class='text-input'>
+                  <input type='text' id='form-last-name' name='name' class='text-input' required>
                   <input class = "submit-button" type="submit" value="Submit"/>
                   <div class='messages'></div>
                 </div>
@@ -110,10 +110,10 @@
             <form id="form3">
               <div class='form-group'>
                 <label for='form-mobile-number'>Mobile Number:</label><br>
-                <input type='number' id='form-mobile-number' name='mobileNumber' class='text-input'><br>
+                <input type="tel" name="phone" class='text-input' pattern="(?:\+?(61))? ?(?:\((?=.*\)))?(0?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[- ]?\d{3})$" required><br>
                 <label for='form-email'>Email:</label><br>
-                <input type='text' id='form-email' name='email' class='text-input'>
-                <input class = "submit-button" type="submit" value=""/>
+                <input type='text' id='form-email' name='email' class='text-input email-input' required>
+                <input class = "submit-button" type="submit" value="Submit"/>
                 <div class='messages'></div>
               </div>
             </form>
@@ -140,7 +140,7 @@
           <form id="form4">
             <div class='form-group'>
               <label for='form-veri-code'>Verification Code:</label><br>
-              <input type='tel' placeholder='000000' maxlength="6" id='form-veri-code' name='veriCode' class='text-input'>
+              <input type='tel' pattern='^[0-9]{1,6}$' placeholder='000000' maxlength="6" id='form-veri-code' name='veriCode' class='text-input' required>
               <input class = "submit-button" type="submit" value="Submit"/>
               <div class='messages'></div>
             </div>
@@ -149,6 +149,62 @@
       </div>
     </div>
   </div>
+</div>
+
+<!-- ADDRESS ENTRY -->
+
+<div class="section">
+    <div class='slide' data-anchor="slide5">
+      <div class='main-div'>
+        <div class = 'half-div'>
+          <div class='image-container'>
+              <img src="img/house.png" alt="House" id='house'>
+          </div>
+        </div>
+        <div class = 'half-div'>
+          <div class='text-container'>
+              <hero>Where do you live?</hero><br>
+              <div class="body">We might send the occasional letter.</div><br>
+              <form id="form5">
+                <div class='form-group'>
+                  <label for='form-street-address'>Street Address:</label><br>
+                  <input type='text' id='form-street-address' name='streetAddress' class='text-input' pattern='^\d+\s[A-z]+\s[A-z]+' required><br>
+                  <label for='form-suburb'>Suburb:</label><br>
+                  <input type='text' id='form-suburb' name='suburb' class='text-input' required><br>
+                  <label for='form-suburb'>Postcode:</label><br>
+                  <input type='tel' maxlength="4" id='form-postcode' name='postcode' class='text-input' pattern="(\d{4})" required>
+
+                  <input class = "submit-button" type="submit" value="Submit"/>
+                  <div class='messages'></div>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- ID VERIFICATION -->
+
+<div class="section">
+<div class='slide' data-anchor="slide6">
+  <div class='main-div'>
+    <div class = 'half-div'>
+      <div class='image-container'>
+          <img src="img/id-card.png" alt="ID" id='id-card'>
+      </div>
+    </div>
+    <div class = 'half-div'>
+      <div class='text-container'>
+          <hero>We need to check it's you.</hero><br>
+          <div class="body">We'll need a picture of your ID.</div><br>
+          
+          <div><input type='file' name='IDimage' accept='.jpg,.JPEG,.png'></div>  
+
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 </div>
@@ -164,7 +220,7 @@
   //options here
   autoScrolling:true,
   scrollHorizontally: true,
-  anchors:['slide1', 'slide2', 'slide3', 'slide4'],
+  anchors:['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6'],
   css3:true,
   licenseKey: 'E5E49030-536045A5-B7FB35A2-EE9BBB0E',
   

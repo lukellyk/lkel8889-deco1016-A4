@@ -35,7 +35,7 @@
   transform: rotate(50deg);
 }
 
-#avatar, #lock, #house{
+#avatar, #lock, #house, #id-card{
   width: auto;
   height: 40vmin;
 }

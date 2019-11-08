@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ING - Sign Up</title>
+  <link rel="shortcut icon" href="img/favicon.png"/>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="css/hover.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+  <script type="text/javascript" src="js/fullpage.js"></script>
+  <script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
+
+
+
+
+
+</head>
+
+
+<body>
+
+  <header>
+    <ul>
+      <div>
+          <a href="index.html#slide1">
+          <img src="img/ing-logo.png" alt="ING Logo" id="ing-logo">
+          </a>
+      </div>
+      <li><a class="hvr-bounce-to-top" href="https://www.ing.com.au/help-and-support.html">Help</a></li>
+      <li><a class="hvr-bounce-to-top" href="https://www.ing.com.au/contact-us.html">Contact</a></li>
+      <li><a class="hvr-bounce-to-top" href="https://www.ing.com.au/security.html">Security</a></li>
+      <li><a class="hvr-bounce-to-top" href="https://www.ing.com.au/about-us.html">About</a></li>
+    </ul>
+  </header>
+
+<div id="fullpage">
+
+<!-- FIRST NAME -->
+
+  <div class="section">
+      <div class='slide' data-anchor="slide1">
+        <div class='main-div'>
+          <div class = 'half-div'>
+            <div class='image-container'>
+                <img src="img/ing-card.png" alt="ING Card" id='ing-card'>
+            </div>
+          </div>
+          <div class = 'half-div'>
+            <div class='text-container'>
+                <hero>Maximise your savings now.</hero><br>
+                <div class="body">Enter your details and open an account in minutes.</div><br>
+                <form id="form1">
+                  <div class='form-group'>
+                    <label for='form-first-name'>First Name:</label><br>
+                    <input type='text' id='form-first-name' name='name' class='text-input' pattern="^(?=.{1,40}$)[a-zA-Z]+(?:[-' ][a-zA-Z]+)*$" required>
+                    <input class = "submit-button" type="submit" value="Submit"/>
+                    <div class='messages'></div>
+                  </div>
+                </form>
+            </div>
+          </div>
+        </div>
+    </div> 
+  </div>
+
+<!-- LAST NAME -->
+
+  <div class="section">
+      <div class='slide' data-anchor="slide2">
+        <div class='main-div'>
+          <div class = 'half-div'>
+            <div class='image-container'>
+              <img src="img/user-avatar.png" alt="Avatar" id='avatar'>
+            </div>
+          </div>
+          <div class = 'half-div'>
+            <div class='text-container'>
+              <hero id='gday-text'>G'day!</hero><br>
+              <div class="body">We're just getting to know each other.</div><br>
+              <form id="form2">
+                <div class='form-group'>
+                  <label for='form-last-name'>Last Name:</label><br>
+                  <input type='text' id='form-last-name' name='name' class='text-input' required>
+                  <input class = "submit-button" type="submit" value="Submit"/>
+                  <div class='messages'></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+<!-- MOBILE NUMBER and EMAIL -->
+
+<div class="section">
+    <div class='slide' data-anchor="slide3">
+      <div class='main-div'>
+        <div class = 'half-div'>
+          <div class='image-container'>
+            <img src="img/phone-icon.png" alt="Phone" id='phone'>
+          </div>
+        </div>
+        <div class = 'half-div'>
+          <div class='text-container'>
+            <hero>How will we contact you?</hero><br>
+            <div class="body">We're going to send you a text and an email to check it's you.</div><br>
+            <form id="form3">
+              <div class='form-group'>
+                <label for='form-mobile-number'>Mobile Number:</label><br>
+                <input type="tel" name="phone" class='text-input' pattern="(?:\+?(61))? ?(?:\((?=.*\)))?(0?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[- ]?\d{3})$" required><br>
+                <label for='form-email'>Email:</label><br>
+                <input type='text' id='form-email' name='email' class='text-input email-input' required>
+                <input class = "submit-button" type="submit" value="Submit"/>
+                <div class='messages'></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- VERIFICATION CODE -->
+
+<div class="section">
+  <div class='slide' data-anchor="slide4">
+    <div class='main-div'>
+      <div class = 'half-div'>
+        <div class='image-container'>
+          <img src="img/lock.png" alt="Lock" id='lock'>
+        </div>
+      </div>
+      <div class = 'half-div'>
+        <div class='text-container'>
+          <hero>Check your phone.</hero><br>
+          <div class="body">We've sent you a code to check it's you.</div><br>
+          <form id="form4">
+            <div class='form-group'>
+              <label for='form-veri-code'>Verification Code:</label><br>
+              <input type='tel' pattern='^[0-9]{1,6}$' placeholder='000000' maxlength="6" id='form-veri-code' name='veriCode' class='text-input' required>
+              <input class = "submit-button" type="submit" value="Submit"/>
+              <div class='messages'></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ADDRESS ENTRY -->
+
+<div class="section">
+    <div class='slide' data-anchor="slide5">
+      <div class='main-div'>
+        <div class = 'half-div'>
+          <div class='image-container'>
+              <img src="img/house.png" alt="House" id='house'>
+          </div>
+        </div>
+        <div class = 'half-div'>
+          <div class='text-container'>
+              <hero>Where do you live?</hero><br>
+              <div class="body">We might send the occasional letter.</div><br>
+              <form id="form5">
+                <div class='form-group'>
+                  <label for='form-street-address'>Street Address:</label><br>
+                  <input type='text' id='form-street-address' name='streetAddress' class='text-input' pattern='^\d+\s[A-z]+\s[A-z]+' required><br>
+                  <label for='form-suburb'>Suburb:</label><br>
+                  <input type='text' id='form-suburb' name='suburb' class='text-input' required><br>
+                  <label for='form-suburb'>Postcode:</label><br>
+                  <input type='tel' maxlength="4" id='form-postcode' name='postcode' class='text-input' pattern="(\d{4})" required>
+
+                  <input class = "submit-button" type="submit" value="Submit"/>
+                  <div class='messages'></div>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- ID VERIFICATION -->
+
+<div class="section">
+<div class='slide' data-anchor="slide6">
+  <div class='main-div'>
+    <div class = 'half-div'>
+      <div class='image-container'>
+          <img src="img/id-card.png" alt="ID" id='id-card'>
+      </div>
+    </div>
+    <div class = 'half-div'>
+      <div class='text-container'>
+        <hero>We need to check it's you.</hero><br>
+        <div class="body">We'll need a picture of your ID.</div><br>
+        <div><input type='file' name='IDimage' accept='.jpg,.JPEG,.png'></div>
+        <div style="padding-top: 25px;">
+        <a href="landing.html" class='next-page-button hvr-back-pulse'>Finish</a>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+<script type="text/javascript" src="js/validate.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+<script type="text/javascript">
+  
+  new fullpage('#fullpage', {
+  //options here
+  autoScrolling:true,
+  scrollHorizontally: true,
+  anchors:['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6'],
+  css3:true,
+  licenseKey: 'E5E49030-536045A5-B7FB35A2-EE9BBB0E',
+  
+  });
+  
+</script>
+
+</html>

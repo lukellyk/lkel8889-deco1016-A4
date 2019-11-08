@@ -63,6 +63,23 @@
   justify-content: center;
 }
 
+
+.next-page-button{
+  text-decoration: none;
+  font-size: 100%;
+  text-align: center;
+  border: none;
+  width: 40%;
+  border-radius: 5px;
+  height: 30px;
+  color: white;
+  background-color: #ff6600;
+  line-height: 1em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
 .submit-button{
   border: none;
   color: rgba(0,0,0,0);

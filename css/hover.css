@@ -1207,12 +1207,12 @@
 /* Back Pulse */
 @-webkit-keyframes hvr-back-pulse {
   50% {
-    background-color: rgba(32, 152, 209, 0.75);
+    background-color: #d45400;
   }
 }
 @keyframes hvr-back-pulse {
   50% {
-    background-color: rgba(32, 152, 209, 0.75);
+    background-color: #d45400;
   }
 }
 .hvr-back-pulse {
@@ -1238,8 +1238,8 @@
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  background-color: #2098D1;
-  background-color: #2098d1;
+  background-color: #ff6600;
+  background-color: #ff6600;
   color: white;
 }
 

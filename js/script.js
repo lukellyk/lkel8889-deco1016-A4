@@ -33,59 +33,14 @@ var form4Constraints = {
 var form5Constraints = { 
 }
 
-    // username: {
-    //   // You need to pick a username too
-    //   presence: true,
-    //   // And it must be between 3 and 20 characters long
-    //   length: {
-    //     minimum: 3,
-    //     maximum: 20
-    //   },
-    //   format: {
-    //     // We don't allow anything that a-z and 0-9
-    //     pattern: "[a-z0-9]+",
-    //     // but we don't care if the username is uppercase or lowercase
-    //     flags: "i",
-    //     message: "can only contain a-z and 0-9"
-    //   }
-    // },
-    // password: {
-    //   // Password is also required
-    //   presence: true,
-    //   // And must be at least 5 characters long
-    //   length: {
-    //     minimum: 5
-    //   }
-    // },
-    // country: {
-    //   // You also need to input where you live
-    //   presence: true,
-    //   // And we restrict the countries supported to Sweden
-    //   inclusion: {
-    //     within: ["AU"],
-    //     // The ^ prevents the field name from being prepended to the error
-    //     message: "^Sorry, this service is currently for Australians only"
-    //   }
-    // },
-    // postcode: {
-    //   // postcode is optional but if specified it must be a 4 digit long number
-    //   format: {
-    //     pattern: "\\d{4}",
-    //     message: "Postcode must be 4 digits"
-    //   },
-    // }
-
-    // }
-  // };
 
   // Hook up the form so we can prevent it from being posted
   var form = document.querySelector("#form1");
   form.addEventListener("submit", function(ev) {
     ev.preventDefault();
     handleFormSubmit(form, undefined, form1and2Constraints);
-    var usersName = inputs.item(0).value;
-    console.log(usersName);
-    document.getElementById('gday-text').innerHTML = "G'day, "+ usersName + "!"
+    localStorage.setItem("usersName", inputs.item(0).value.charAt(0).toUpperCase() + inputs.item(0).value.slice(1))
+    document.getElementById('gday-text').innerHTML = "G'day, "+ localStorage.usersName + "!";
   });
 
 
@@ -99,6 +54,7 @@ var form5Constraints = {
   form3.addEventListener("submit", function(ev) {
     ev.preventDefault();
     handleFormSubmit(form3, undefined, form3Constraints);
+    localStorage.setItem("usersEmail", inputs.item(5).value)
   });
 
   var form4 = document.querySelector("#form4");
@@ -121,7 +77,7 @@ var form5Constraints = {
     // then we update the form to reflect the results
     showErrors(form, errors || {});
     if (!errors) {
-      showSuccess();
+      // showSuccess();
       fullpage_api.moveSectionDown();
     }
   }
@@ -211,3 +167,4 @@ var form5Constraints = {
     block.innerText = error;
     messages.appendChild(block);
   }
+

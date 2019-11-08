@@ -48,6 +48,7 @@
 
 .image-container{
   height: 100vh;
+  margin-right: 3vmin;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -77,6 +78,10 @@ ul {
   position: -webkit-sticky; /* safari */
   position: sticky;
   top: 0;
+}
+
+label{
+  font-weight:bold;
 }
 
 li {

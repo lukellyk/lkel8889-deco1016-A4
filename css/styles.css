@@ -32,7 +32,7 @@
 #ing-card{
   width: auto;
   height: 25vmin;
-  transform: translateX(-5vh) rotate(50deg);
+  transform: rotate(50deg);
 }
 
 #avatar, #lock, #house{

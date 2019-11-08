@@ -20,7 +20,7 @@
     mobileNumber: {
       presence: true,
       format:{
-        pattern: "^(?:\+?(61))? ?(?:\((?=.*\)))?(0?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[- ]?\d{3})$",
+        pattern: "(0?[4])[0-9]{8}",
       }
       },
           
@@ -107,7 +107,7 @@
     // then we update the form to reflect the results
     showErrors(form, errors || {});
     if (!errors) {
-      // showSuccess();
+      showSuccess();
       fullpage_api.moveSectionDown();
     }
   }

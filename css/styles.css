@@ -35,7 +35,7 @@
   transform: translateX(-5vh) rotate(50deg);
 }
 
-#avatar{
+#avatar, #lock, #house{
   width: auto;
   height: 40vmin;
 }

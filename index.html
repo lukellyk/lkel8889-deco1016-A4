@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ING - Sign Up</title>
+  <title>ING - Home</title>
   <link rel="shortcut icon" href="img/favicon.png"/>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/hamburger.css">
@@ -12,17 +12,14 @@
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
   <script type="text/javascript" src="js/fullpage.js"></script>
   <script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
-
-
-
-
-
 </head>
-
 
 <body>
 
   <header>
+
+  <!-- Header - Dynamically switches between top nav and hamburger menu -->
+
     <div>
       <a href="index.html#slide1">
         <img src="img/ing-logo.png" alt="ING Logo" id="ing-logo">
@@ -34,6 +31,8 @@
       <li><a class="hvr-bounce-to-top" href="https://www.ing.com.au/security.html">Security</a></li>
       <li><a class="hvr-bounce-to-top" href="https://www.ing.com.au/about-us.html">About</a></li>
     </ul>
+
+    <!-- Hamburger Menu -->
 
     <nav role="navigation">
       <div id="menuToggle">
@@ -89,10 +88,11 @@
 
 </body>
 
+<!-- CONFIG FOR FULLPAGE LIBRARY -->
+
 <script type="text/javascript">
   
   new fullpage('#fullpage', {
-  //options here
   autoScrolling:true,
   scrollHorizontally: true,
   anchors:['slide1'],

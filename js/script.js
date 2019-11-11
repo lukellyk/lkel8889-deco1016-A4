@@ -39,7 +39,7 @@ var form5Constraints = {
   form.addEventListener("submit", function(ev) {
     ev.preventDefault();
     handleFormSubmit(form, undefined, form1and2Constraints);
-    localStorage.setItem("usersName", inputs.item(0).value.charAt(0).toUpperCase() + inputs.item(0).value.slice(1))
+    localStorage.setItem("usersName", inputs.item(1).value.charAt(0).toUpperCase() + inputs.item(1).value.slice(1))
     document.getElementById('gday-text').innerHTML = "G'day, "+ localStorage.usersName + "!";
   });
 
@@ -54,7 +54,7 @@ var form5Constraints = {
   form3.addEventListener("submit", function(ev) {
     ev.preventDefault();
     handleFormSubmit(form3, undefined, form3Constraints);
-    localStorage.setItem("usersEmail", inputs.item(5).value)
+    localStorage.setItem("usersEmail", inputs.item(6).value)
   });
 
   var form4 = document.querySelector("#form4");

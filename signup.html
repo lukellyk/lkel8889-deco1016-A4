@@ -7,6 +7,7 @@
   <title>ING - Sign Up</title>
   <link rel="shortcut icon" href="img/favicon.png"/>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/hamburger.css">
   <link href="css/hover.css" rel="stylesheet" media="all">
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
   <script type="text/javascript" src="js/fullpage.js"></script>
@@ -22,17 +23,36 @@
 <body>
 
   <header>
+    <div>
+      <a href="index.html#slide1">
+        <img src="img/ing-logo.png" alt="ING Logo" id="ing-logo">
+      </a>
+    </div>
     <ul>
-      <div>
-          <a href="index.html#slide1">
-          <img src="img/ing-logo.png" alt="ING Logo" id="ing-logo">
-          </a>
-      </div>
       <li><a class="hvr-bounce-to-top" href="https://www.ing.com.au/help-and-support.html">Help</a></li>
       <li><a class="hvr-bounce-to-top" href="https://www.ing.com.au/contact-us.html">Contact</a></li>
       <li><a class="hvr-bounce-to-top" href="https://www.ing.com.au/security.html">Security</a></li>
       <li><a class="hvr-bounce-to-top" href="https://www.ing.com.au/about-us.html">About</a></li>
     </ul>
+
+    <nav role="navigation">
+      <div id="menuToggle">
+
+        <input type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <li><a href="https://www.ing.com.au/help-and-support.html">Help</a></li>
+          <li><a href="https://www.ing.com.au/contact-us.html">Contact</a></li>
+          <li><a href="https://www.ing.com.au/security.html">Security</a></li>
+          <li><a href="https://www.ing.com.au/about-us.html">About</a></li>
+            </ul>
+        </div>
+      </nav>
+
   </header>
 
 <div id="fullpage">
@@ -42,12 +62,12 @@
   <div class="section">
       <div class='slide' data-anchor="slide1">
         <div class='main-div'>
-          <div class = 'half-div'>
+          <div class = 'half-div left-div'>
             <div class='image-container'>
                 <img src="img/ing-card.png" alt="ING Card" id='ing-card'>
             </div>
           </div>
-          <div class = 'half-div'>
+          <div class = 'half-div right-div'>
             <div class='text-container'>
                 <hero>Maximise your savings now.</hero><br>
                 <div class="body">Enter your details and open an account in minutes.</div><br>
@@ -70,12 +90,12 @@
   <div class="section">
       <div class='slide' data-anchor="slide2">
         <div class='main-div'>
-          <div class = 'half-div'>
+          <div class = 'half-div left-div'>
             <div class='image-container'>
               <img src="img/user-avatar.png" alt="Avatar" id='avatar'>
             </div>
           </div>
-          <div class = 'half-div'>
+          <div class = 'half-div right-div'>
             <div class='text-container'>
               <hero id='gday-text'>G'day!</hero><br>
               <div class="body">We're just getting to know each other.</div><br>
@@ -98,12 +118,12 @@
 <div class="section">
     <div class='slide' data-anchor="slide3">
       <div class='main-div'>
-        <div class = 'half-div'>
+        <div class = 'half-div left-div'>
           <div class='image-container'>
             <img src="img/phone-icon.png" alt="Phone" id='phone'>
           </div>
         </div>
-        <div class = 'half-div'>
+        <div class = 'half-div right-div'>
           <div class='text-container'>
             <hero>How will we contact you?</hero><br>
             <div class="body">We're going to send you a text and an email to check it's you.</div><br>
@@ -128,12 +148,12 @@
 <div class="section">
   <div class='slide' data-anchor="slide4">
     <div class='main-div'>
-      <div class = 'half-div'>
+      <div class = 'half-div left-div'>
         <div class='image-container'>
           <img src="img/lock.png" alt="Lock" id='lock'>
         </div>
       </div>
-      <div class = 'half-div'>
+      <div class = 'half-div right-div'>
         <div class='text-container'>
           <hero>Check your phone.</hero><br>
           <div class="body">We've sent you a code to check it's you.</div><br>
@@ -156,12 +176,12 @@
 <div class="section">
     <div class='slide' data-anchor="slide5">
       <div class='main-div'>
-        <div class = 'half-div'>
+        <div class = 'half-div left-div'>
           <div class='image-container'>
               <img src="img/house.png" alt="House" id='house'>
           </div>
         </div>
-        <div class = 'half-div'>
+        <div class = 'half-div right-div'>
           <div class='text-container'>
               <hero>Where do you live?</hero><br>
               <div class="body">We might send the occasional letter.</div><br>
@@ -189,12 +209,12 @@
 <div class="section">
 <div class='slide' data-anchor="slide6">
   <div class='main-div'>
-    <div class = 'half-div'>
+    <div class = 'half-div left-div'>
       <div class='image-container'>
           <img src="img/id-card.png" alt="ID" id='id-card'>
       </div>
     </div>
-    <div class = 'half-div'>
+    <div class = 'half-div right-div'>
       <div class='text-container'>
         <hero>We need to check it's you.</hero><br>
         <div class="body">We'll need a picture of your ID.</div><br>
